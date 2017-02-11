@@ -5,11 +5,11 @@
         .module('CanadaApp')
         .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-            $urlRouterProvider.otherwise('/');
+            //$urlRouterProvider.otherwise('/');
 
             $stateProvider
                 .state('index', {
-                    name: 'index'
+                    name: 'index',
                     url: '#',
                     templateUrl: 'index.html',
                     controller: 'mainController',

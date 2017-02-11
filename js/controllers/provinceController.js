@@ -3,7 +3,7 @@
 
     angular
         .module('CanadaApp')
-        .service('provinceController', dataService)
+        .service('provinceController')
     
     provinceController.$inject = ['$http', '$filter'];
     
