@@ -17,6 +17,10 @@ h2 {
     height: 400px;
 }
 
+.citiesGrid{
+    height: 150px;
+}
+    
 .btn.btn-primary,
 .btn.btn-default {
     padding: 2px 12px;

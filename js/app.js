@@ -48,8 +48,6 @@ var CanadaApp = angular.module('CanadaApp', [ "ui.router", "ui.bootstrap", "ui.g
         
         $scope.singleFilter = function( renderableRows ){
             var matcher = new RegExp($scope.controls.filterString);
-            
-            console.log($scope.controls.filterString);
             renderableRows.forEach( function( row ) {
                 var match = false;
                 [ 'name', 'population' ].forEach(function( field ){

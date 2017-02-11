@@ -4,9 +4,10 @@
     angular
         .module('CanadaApp')
         .controller('provinceController', ['$scope', 'dataService', 'uiGridConstants', function($scope, dataService,  uiGridConstants) {
-
+            
             $scope.controls = {};
-            $scope.params = "yu";
+            $scope.params = "yt";
+            $scope.controls = {};
             
             
             var init = function (){
@@ -14,9 +15,11 @@
             };
 
             var getCityData = function (params){
+                console.log(params);
                 return dataService.getCities(params).then(
                     function successCallback(response) {
-                         $scope.gridOptions.data = response.data;
+                        $scope.gridOptions.data = response.data.cities;
+                        $scope.provinceName = response.data.name;
                     },
                     function errorCallback(response) {
                         // handle error
@@ -24,25 +27,49 @@
                 );
             };
 
-            
-            console.log("!"); 
-            
             $scope.gridOptions = {
                 enableFiltering: false,
-                enableRowSelection: true, 
                 onRegisterApi: function(gridApi){
                     $scope.gridApi = gridApi;
                     $scope.gridApi.grid.registerRowsProcessor( $scope.singleFilter, 200 );
-    //                $scope.gridApi.selection.on.rowSelectionChanged($scope,function(row){
-    //                    var msg = 'row selected ' + row.isSelected;
-    //                    //Open your link here.
-    //                });
                 },
                 columnDefs: [
                     { field: 'name' },
-                    { field: 'population' }
+                    { field: 'population', sortingAlgorithm: $scope.sortPop }// not working as expected
                 ]
             };  
+            
+            
+            $scope.sortPop = function(a, b, rowA, rowB, direction){
+                console.log("!!!");
+                if (a == b) return 0;
+                if (a < b) return -1;
+            };
+            
+            $scope.filter = function() {
+                $scope.gridApi.grid.refresh();
+            };
+
+            $scope.clear = function() {
+                $scope.controls.filterString = "";
+                $scope.gridApi.grid.refresh();
+            };
+
+            $scope.singleFilter = function( renderableRows ){
+                var matcher = new RegExp($scope.controls.filterString);
+                renderableRows.forEach( function( row ) {
+                    var match = false;
+                    [ 'name', 'population' ].forEach(function( field ){
+                        if ( row.entity[field].match(matcher) ){
+                            match = true;
+                        }
+                    });
+                    if ( !match ){
+                        row.visible = false;
+                    }
+                });
+                return renderableRows;
+            };
             
             init();
   

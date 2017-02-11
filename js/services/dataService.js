@@ -31,11 +31,17 @@
             })
             .then(function successCallback(response) {
                 
+                // normally handled by API passing back only one record
+                var oneRecord = null;
                 angular.forEach(response.data, function(value, key) {
-                    console.log(key, value);
+                    if (value.code == params) {
+                        oneRecord = value;
+                    }
                 });
-                
+                response.data = oneRecord;
                 return response;
+                
+                //return response;
             },
                 function errorCallback(response) {
                 return response;

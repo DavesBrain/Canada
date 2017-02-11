@@ -19,8 +19,11 @@
                     name:'province',
                     url: '/province/:code',
                     templateUrl: 'js/views/province.html',
-                    controller: 'provinceController',
+                    controller: function($scope, $stateParams) {
+                        $scope.code = $stateParams.code;
+                    },
                     data: { pageTitle: 'Province' }
+
                 })
             
             
