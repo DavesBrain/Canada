@@ -18,7 +18,7 @@
                 })
                 .state('province', {
                     name:'province',
-                    url: '/province',
+                    url: 'province',
                     templateUrl: 'js/views/province.html',
                     controller: 'provinceController',
 //                    controllerAs: 'provinceVm',

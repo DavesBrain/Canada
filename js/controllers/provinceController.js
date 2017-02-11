@@ -3,11 +3,7 @@
 
     angular
         .module('CanadaApp')
-        .service('provinceController')
+        .controller('provinceController', ['$scope', function($scope) {
     
-    provinceController.$inject = ['$http', '$filter'];
-    
-    function provinceController($http, $filter) {
-
-    }
+    }]);
 })();
