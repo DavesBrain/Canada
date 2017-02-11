@@ -1,1 +1,6 @@
-<f2>Province</f2>
+<h2>Province</h2>
+
+<input ng-model="controls.filterString"/>
+<button type="button" class="btn btn-default" ng-click='clear()'>X</button>
+<button type="button" class="btn btn-primary" ng-click='filter()'>Filter</button>
+<div ui-grid="gridOptions" class="provincesGrid"></div>

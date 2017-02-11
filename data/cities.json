@@ -1,0 +1,107 @@
+[
+    { 
+       "name": "Yukon",
+       "code": "yt",
+       "cities" : [
+           { "name": "Whitehorse", "population": "25,085" },
+           { "name": "Dawson", "population": "1,319" },
+           { "name": "Watson Lake", "population": "790" }
+       ]
+    },{
+       "name": "Saskatchewan",
+       "code": "sk", 
+       "cities" : [
+           { "name": "Saskatoon", "population": "233,222" },
+           { "name": "Regina", "population": "215,106" },
+           { "name": "Prince Albert", "population": "35,129" }
+       ]
+    },{
+       "name": "Manitoba",
+       "code": "mb", 
+       "cities" : [
+           { "name": "Winnipeg", "population": "663,617" },
+           { "name": "Brandon", "population": "46,061" },
+           { "name": "Steinbach", "population": "13,524" }
+       ]
+    },{
+       "name": "Nova Scotia",
+       "code": "ns", 
+       "cities" : [
+           { "name": "Halifax", "population": "403,131" },
+           { "name": "Cape Breton", "population": "94,285" },
+           { "name": "Truro", "population": "12,059" }
+       ]
+    },{
+       "name": "Alberta",
+       "code": "ab", 
+       "cities" : [
+           { "name": "Calgary", "population": "1,239,220" },
+           { "name": "Edmonton", "population": "932,546" },
+           { "name": "Red Deer", "population": "100,418" }
+       ]
+    },{
+       "name": "British Columbia",
+       "code": "bc", 
+       "cities" : [
+           { "name": "Vancouver", "population": "631,486" },
+           { "name": "Surrey", "population": "517,887" },
+           { "name": "Burnaby", "population": "239,700" }
+       ]
+    },{
+       "name": "Ontario",
+       "code": "on", 
+       "cities" : [
+           { "name": "Mississauga", "population": "721,599" },
+           { "name": "Ottawa", "population": "934,243" },
+           { "name": "Toronto", "population": "2,731,579" }
+       ]
+    },{
+       "name": "Quebec",
+       "code": "qc", 
+       "cities" : [
+           { "name": "Montreal", "population": "1,704,694" },
+           { "name": "Quebec City", "population": "531,902" },
+           { "name": "Laval", "population": "422,993" }
+       ]
+    },{
+       "name": "Prince Edward Island",
+       "code": "pe", 
+       "cities" : [
+           { "name": "Charlottetown", "population": "34,562" },
+           { "name": "Summerside", "population": "14,751" },
+           { "name": "Alberton", "population": "1,135" }
+       ]
+    },{
+       "name": "Nunavut",
+       "code": "nu", 
+       "cities" : [
+           { "name": "Iqaluit", "population": "6,254" },
+           { "name": "Rankin", "population": "2,577" },
+           { "name": "Arviat", "population": "1,810" }
+       ]
+    },{
+       "name": "Northwest Territories",
+       "code": "nt", 
+       "cities" : [
+           { "name": "Hay River", "population": "2,806" },
+           { "name": "Inuvik", "population": "3,403" },
+           { "name": "Yellowknife", "population": "18,352" }
+       ]
+    },{
+       "name": "Newfoundland and Labrador",
+       "code": "nl", 
+       "cities" : [
+           { "name": "Corner Brook", "population": "19,886" },
+           { "name": "Mount Pearl", "population": "24,284" },
+           { "name": "St. John's", "population": "108,860" }
+       ]
+    },{
+       "name": "New Brunswick",
+       "code": "nb", 
+       "cities" : [
+           { "name": "Moncton", "population": "71,889" },
+           { "name": "Saint John", "population": "67,575" },
+           { "name": "Fredericton", "population": "58,220" }
+       ]
+    }
+]

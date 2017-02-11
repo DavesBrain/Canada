@@ -1,0 +1,24 @@
+h1 {
+    font-size: 20pt;
+    color: chocolate;
+}
+
+h2 {
+    font-size: 16pt;
+    color: coral;
+}
+
+
+#main {
+    padding: 0 20px;
+}
+
+.provincesGrid{
+    height: 400px;
+}
+
+.btn.btn-primary,
+.btn.btn-default {
+    padding: 2px 12px;
+    margin-bottom: 2px;
+}

@@ -13,15 +13,13 @@
                     url: '#',
                     templateUrl: 'index.html',
                     controller: 'mainController',
-                    controllerAs: 'mainVm',
                     data: { pageTitle: 'Main' }
                 })
                 .state('province', {
                     name:'province',
-                    url: 'province',
+                    url: '/province',
                     templateUrl: 'js/views/province.html',
                     controller: 'provinceController',
-//                    controllerAs: 'provinceVm',
                     data: { pageTitle: 'Province' }
                 })
             
