@@ -17,6 +17,7 @@
     <script src="js/app.js" type="text/javascript"></script>
     <script src="js/routes.js" type="text/javascript"></script>
     <script src="js/services/dataService.js" type="text/javascript"></script>
+    <script src="js/controllers/provincesController.js" type="text/javascript"></script>
     <script src="js/controllers/provinceController.js" type="text/javascript"></script>
 </head>
 <body ng-controller="mainController">                                                                                                                                                                                                                              
@@ -28,8 +29,7 @@
 <!--        <a ui-sref="provinces({ id: id })">{{ id }}</a>    -->
         <a ui-sref="province">{{ id }}</a>    
         
-        <div ui-view>
-        </div>        
+        <div ui-view></div>        
     <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
         Single Toggle
     </button>

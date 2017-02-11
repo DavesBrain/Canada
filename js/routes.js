@@ -5,7 +5,7 @@
         .module('CanadaApp')
         .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-            //$urlRouterProvider.otherwise('/');
+            $urlRouterProvider.otherwise('/');
 
             $stateProvider
                 .state('index', {
@@ -25,9 +25,6 @@
                     data: { pageTitle: 'Province' }
                 })
             
-//            .state('contacts', {
-//                template: '<h1>My Contacts</h1>'
-//            })
             
         }]);
 })();
