@@ -1,0 +1,55 @@
+[
+       { 
+           "name": "Yukon",
+           "code": "yt",
+           "population": 33897
+       },{
+           "name": "Saskatchewan",
+           "code": "sk", 
+           "population": 1033381
+       },{
+           "name": "Manitoba",
+           "code": "mb", 
+           "population": 1208268
+       },{
+           "name": "Nova Scotia",
+           "code": "ns", 
+           "population": 921727,
+       },{
+           "name": "Alberta",
+           "code": "ab", 
+           "population": 3645257,
+       },{
+           "name": "British Columbia",
+           "code": "bc", 
+           "population": 4400057,
+       },{
+           "name": "Ontario",
+           "code": "on", 
+           "population": 12851821,
+       },{
+           "name": "Quebec",
+           "code": "qc", 
+           "population": 7903001,
+       },{
+           "name": "Prince Edward Island",
+           "code": "pe", 
+           "population": 140204,
+       },{
+           "name": "Nunavut",
+           "code": "nu", 
+           "population": 31906,
+       },{
+           "name": "Northwest Territories",
+           "code": "nt", 
+           "population": 41462,
+       },{
+           "name": "Newfoundland and Labrador",
+           "code": "nl", 
+           "population": 514536,
+       },{
+           "name": "New Brunswick",
+           "code": "nb", 
+           "population": 751171,
+       }
+   ]

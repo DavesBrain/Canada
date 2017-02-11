@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="CanadaApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    
+    <link href="plugins/ui-bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/ui-bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/ui-grid-stable.min.css" rel="stylesheet">
+    <link href="css/Site.css"  rel="stylesheet" type="text/css"/>
+
+    <script src="plugins/angular/angular.min.js" type="text/javascript"></script>
+    <script src="plugins/angular-ui-router.js" type="text/javascript"></script>
+    <script src="plugins/ui-bootstrap/ui-bootstrap-tpls-2.5.0.min.js" type="text/javascript"></script>
+    <script src="plugins/ui-grid-stable.min.js" type="text/javascript"></script>
+
+    <script src="js/app.js" type="text/javascript"></script>
+<!--    <script src="js/routes.js" type="text/javascript"></script>-->
+    <script src="js/services/dataService.js" type="text/javascript"></script>
+</head>
+<body ng-controller="mainController">                                                                                                                                                                                                                              
+
+    <div id="main">
+        
+    <h1>Canada</h1> 
+        
+<!--        <a ui-sref="provinces({ id: id })">{{ id }}</a>    -->
+        <a ui-sref="province">{{ id }}</a>    
+        
+        <div ui-view>
+        </div>        
+    <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+        Single Toggle
+    </button>
+    
+    </div>    
+    
+</body>
+</html>
