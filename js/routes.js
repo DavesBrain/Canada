@@ -17,7 +17,7 @@
                 })
                 .state('province', {
                     name:'province',
-                    url: '/province',
+                    url: '/province/:code',
                     templateUrl: 'js/views/province.html',
                     controller: 'provinceController',
                     data: { pageTitle: 'Province' }
