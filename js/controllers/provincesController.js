@@ -4,13 +4,12 @@
     angular
         .module('CanadaApp')
 
-        .controller('provincesController', ['$scope', 'dataService', 'uiGridConstants', function($scope, dataService,  uiGridConstants) {
+        .controller('provincesController', ['$scope', '$state', 'dataService', 'uiGridConstants', function($scope,  $state, dataService,  uiGridConstants) {
         
         $scope.controls = {};
         
         var init = function (){
             getProvincesData();
-            console.log(":)");
         };
         
         var getProvincesData = function (){
@@ -25,34 +24,30 @@
         };
         
         $scope.gridOptions = {
-//            enableFiltering: false,
             enableRowSelection: true,
             enableRowHeaderSelection: false,
-//            onRegisterApi: function(gridApi){
-//                $scope.gridApi = gridApi;
-//                $scope.gridApi.grid.registerRowsProcessor( $scope.singleFilter, 200 );
-//                $scope.gridApi.selection.on.rowSelectionChanged($scope,function(row){
-//                    var msg = 'row selected ' + row.isSelected;
-//                    //Open your link here.
-//                });
-//            },
+            multiSelect: false,
+            onRegisterApi: function( gridApi ) {
+                $scope.gridApi = gridApi;
+                $scope.gridApi.grid.registerRowsProcessor( $scope.singleFilter, 200 );
+                gridApi.selection.on.rowSelectionChanged($scope,function(row){
+                    $state.go('province', {id: row.entity.code});
+                });
+            },
             columnDefs: [
-                { field: 'name' },
-                { field: 'population' },
+                { 
+                    displayName: 'Province/Territory',
+                    field: 'name'
+                },{ 
+                    field: 'population',
+                    cellTemplate: '<div class="ui-grid-cell-contents align-right">{{grid.getCellValue(row, col) | number}}</div>',
+                    type: 'number',
+                    sort: {
+                        direction: uiGridConstants.DESC
+                    }
+                },
             ]
         };        
-          $scope.gridOptions.multiSelect = false;
-          $scope.gridOptions.modifierKeysToMultiSelect = false;
-          $scope.gridOptions.noUnselect = true;
-          $scope.gridOptions.onRegisterApi = function( gridApi ) {
-              $scope.gridApi = gridApi;
-               gridApi.selection.on.rowSelectionChanged($scope,function(row){
-                var msg = 'row selected ' + row.isSelected;
-                //Open your link here.
-              });
-          };
-
-            
             
         $scope.filter = function() {
             $scope.gridApi.grid.refresh();
@@ -63,9 +58,8 @@
             $scope.gridApi.grid.refresh();
         };
         
-        
         $scope.singleFilter = function( renderableRows ){
-            var matcher = new RegExp($scope.controls.filterString);
+            var matcher = new RegExp($scope.controls.filterString, 'i');
             renderableRows.forEach( function( row ) {
                 var match = false;
                 [ 'name', 'population' ].forEach(function( field ){

@@ -1,9 +1,21 @@
 <div>
-    <h2>Provinces</h2>
-
-    <input ng-model="controls.filterString"  ng-change="filter()"/>
-    <button type="button" class="btn btn-default" ng-click='clear()'>X</button>
-    <div ui-grid="gridOptions"  ui-grid-selection class="provincesGrid"></div>
-
-    <a ui-sref="province({id: 'on'})">Yukon</a>
+    <div class="row">
+        <div class="col-sm-8">
+            <h2 class="subhead">&nbsp;</h2>
+            <a class="map-underlay" title="No this is not clickable!">
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            Filter:
+            <input ng-model="controls.filterString" ng-change="filter()" />
+            <button type="button" class="btn btn-default" ng-click='clear()'>X</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <div ui-grid="gridOptions"  ui-grid-selection class="provincesGrid"></div>
+        </div>
+    </div>
 </div>

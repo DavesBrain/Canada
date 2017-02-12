@@ -6,13 +6,8 @@
         .controller('provinceController', ['$scope', 'dataService', 'uiGridConstants', '$stateParams', function($scope, dataService,  uiGridConstants, $stateParams) {
             
             $scope.controls = {};
-            $scope.params = "sk";
             
-            console.log("id: ",$stateParams.id);
-                                           
             var init = function (){
-                console.log("$stateParams.id: ",$stateParams.id);
-                console.log("$scope.params: ", $scope.params);
                 getCityData($stateParams.id);
             };
 
@@ -21,6 +16,7 @@
                     function successCallback(response) {
                         $scope.gridOptions.data = response.data.cities;
                         $scope.provinceName = response.data.name;
+                        $scope.provinceId = response.data.id;
                     },
                     function errorCallback(response) {
                         // handle error
@@ -35,17 +31,19 @@
                     $scope.gridApi.grid.registerRowsProcessor( $scope.singleFilter, 200 );
                 },
                 columnDefs: [
-                    { field: 'name' },
-                    { field: 'population', sortingAlgorithm: $scope.sortPop }// not working as expected
+                    { 
+                        field: 'name',
+                        displayName: 'Cities'
+                    },{ 
+                        field: 'population', 
+                        cellTemplate: '<div class="ui-grid-cell-contents align-right">{{grid.getCellValue(row, col) | number}}</div>',
+                        type: 'number',
+                        sort: {
+                            direction: uiGridConstants.DESC
+                        }
+                    }
                 ]
             };  
-            
-            
-            $scope.sortPop = function(a, b, rowA, rowB, direction){
-                console.log("!!!");
-                if (a == b) return 0;
-                if (a < b) return -1;
-            };
             
             $scope.filter = function() {
                 $scope.gridApi.grid.refresh();
@@ -57,7 +55,7 @@
             };
 
             $scope.singleFilter = function( renderableRows ){
-                var matcher = new RegExp($scope.controls.filterString);
+                var matcher = new RegExp($scope.controls.filterString, 'i');
                 renderableRows.forEach( function( row ) {
                     var match = false;
                     [ 'name', 'population' ].forEach(function( field ){

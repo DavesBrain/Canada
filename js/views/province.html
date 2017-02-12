@@ -1,10 +1,25 @@
 <div ng-controller="provinceController">
-    <h2>{{provinceName}}</h2>
-    <a ui-sref="#">Back</a>
-
-    <input ng-model="controls.filterString" ng-change="filter()" />
-    <button type="button" class="btn btn-default" ng-click='clear()'>X</button>
-
-    <div ui-grid="gridOptions" class="citiesGrid"></div>
-    
+    <div class="row">
+        <div class="col-sm-6">
+            <h2 class="subhead">{{provinceName}}&nbsp;</h2>
+            <div class="map-underlay">
+                <a class="map-overlay" style="background-position: left -{{provinceId*100+200}}px" title="No this is not clickable!"></a>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="align-right"><a class="btn btn-default" ui-sref="index">Back</a></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            Filter:
+            <input ng-model="controls.filterString" ng-change="filter()" />
+            <button type="button" class="btn btn-default" ng-click='clear()'>X</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <div ui-grid="gridOptions" class="citiesGrid"></div>
+        </div>
+    </div>
 </div>

@@ -1,0 +1,80 @@
+/* ui-grid */
+
+.ui-grid-top-panel{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,dbbf85+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #dbbf85 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#dbbf85 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#dbbf85 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbbf85',GradientType=0 ); /* IE6-9 */
+}
+
+.ui-grid-row:nth-child(even) .ui-grid-cell{
+    background-color: #F9F3E1;
+}
+
+.ui-grid-cell-contents{
+    color: #4E2C27;
+}
+
+.provincesGrid .ui-grid-row  .ui-grid-cell{
+    cursor: pointer;
+}
+
+.provincesGrid .ui-grid-row.highlight  .ui-grid-cell{
+    background-color: orangered;
+}
+
+.provincesGrid .ui-grid-row:hover .ui-grid-cell {
+    background-color: #EEDDB7;    
+}
+
+/* bootstrap */
+
+.row {
+    margin-bottom: 8px;
+}
+
+.btn.btn-primary,
+.btn.btn-default {
+    padding: 2px 12px;
+    margin-bottom: 2px;    
+}
+
+.btn.btn-default {
+    /* Permalink - http://colorzilla.com/gradient-editor/#eeddb7+0,7d573d+50,654133+51,957047+100 */
+    background: rgb(238,221,183); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,221,183,1) 0%, rgba(125,87,61,1) 50%, rgba(101,65,51,1) 51%, rgba(149,112,71,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(238,221,183,1) 0%,rgba(125,87,61,1) 50%,rgba(101,65,51,1) 51%,rgba(149,112,71,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(238,221,183,1) 0%,rgba(125,87,61,1) 50%,rgba(101,65,51,1) 51%,rgba(149,112,71,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeddb7', endColorstr='#957047',GradientType=0 ); /* IE6-9 */
+    color: white;
+}
+
+.btn.btn-primary:active,
+.btn.btn-default:active {
+    /* Permalink - http://colorzilla.com/gradient-editor/#ffe7cc+0,ff7d32+50,ff5000+52,f99625+100 */
+    background: rgb(255,231,204); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,231,204,1) 0%, rgba(255,125,50,1) 50%, rgba(255,80,0,1) 52%, rgba(249,150,37,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,231,204,1) 0%,rgba(255,125,50,1) 50%,rgba(255,80,0,1) 52%,rgba(249,150,37,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,231,204,1) 0%,rgba(255,125,50,1) 50%,rgba(255,80,0,1) 52%,rgba(249,150,37,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe7cc', endColorstr='#f99625',GradientType=0 ); /* IE6-9 */
+    border-color:#654133;
+}
+
+/*
+colour palette
+
+white
+#F7F3D3
+#EEDDB7
+#DBBF85
+#BF9D60
+#AC8853
+#957047
+#7D573D
+#654133
+#4E2C27
+black
+orangered
+*/

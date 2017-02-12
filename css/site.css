@@ -1,11 +1,12 @@
 h1 {
-    font-size: 20pt;
-    color: chocolate;
+    font-size: 16pt;
+    color: #4E2C27;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 16pt;
-    color: coral;
+    font-size: 14pt;
+    color: #654133;
 }
 
 
@@ -14,15 +15,53 @@ h2 {
 }
 
 .provincesGrid{
-    height: 400px;
+    height: 450px;
 }
 
 .citiesGrid{
     height: 150px;
 }
-    
-.btn.btn-primary,
-.btn.btn-default {
-    padding: 2px 12px;
-    margin-bottom: 2px;
+
+.subhead{
+    display: inline;
 }
+
+.align-right{
+    text-align: right;
+}
+
+.map-underlay {
+    width: 143px;
+    height: 100px;
+    background-image: url('../images/map.png');   
+    background-position: left top;
+    position: relative;
+    display: block;
+}
+.map-overlay {
+    width: 143px;
+    height: 100px;
+    background-image: url('../images/map.png');
+    background-position: left top;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*
+colour palette
+
+white
+#F7F3D3
+#EEDDB7
+#DBBF85
+#BF9D60
+#AC8853
+#957047
+#7D573D
+#654133
+#4E2C27
+black
+orangered
+*/

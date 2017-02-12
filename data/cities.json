@@ -1,107 +1,120 @@
 [
     { 
-       "name": "Yukon",
-       "code": "yt",
-       "cities" : [
-           { "name": "Whitehorse", "population": "25,085" },
-           { "name": "Dawson", "population": "1,319" },
+        "name": "Yukon",
+        "code": "yt",
+        "id": 0,
+        "cities" : [
+           { "name": "Whitehorse", "population": "25085" },
+           { "name": "Dawson", "population": "1319" },
            { "name": "Watson Lake", "population": "790" }
        ]
     },{
        "name": "Saskatchewan",
        "code": "sk", 
+        "id": 5,
        "cities" : [
-           { "name": "Saskatoon", "population": "233,222" },
-           { "name": "Regina", "population": "215,106" },
-           { "name": "Prince Albert", "population": "35,129" }
+           { "name": "Saskatoon", "population": "233222" },
+           { "name": "Regina", "population": "215106" },
+           { "name": "Prince Albert", "population": "35129" }
        ]
     },{
        "name": "Manitoba",
-       "code": "mb", 
+        "code": "mb", 
+        "id": 6,
        "cities" : [
-           { "name": "Winnipeg", "population": "663,617" },
-           { "name": "Brandon", "population": "46,061" },
-           { "name": "Steinbach", "population": "13,524" }
+           { "name": "Winnipeg", "population": "663617" },
+           { "name": "Brandon", "population": "46061" },
+           { "name": "Steinbach", "population": "13524" }
        ]
     },{
        "name": "Nova Scotia",
        "code": "ns", 
-       "cities" : [
-           { "name": "Halifax", "population": "403,131" },
-           { "name": "Cape Breton", "population": "94,285" },
-           { "name": "Truro", "population": "12,059" }
+        "id": 11,
+        "cities" : [
+           { "name": "Halifax", "population": "403131" },
+           { "name": "Cape Breton", "population": "94285" },
+           { "name": "Truro", "population": "12059" }
        ]
     },{
        "name": "Alberta",
        "code": "ab", 
+        "id": 4,
        "cities" : [
-           { "name": "Calgary", "population": "1,239,220" },
-           { "name": "Edmonton", "population": "932,546" },
-           { "name": "Red Deer", "population": "100,418" }
+           { "name": "Calgary", "population": "1239220" },
+           { "name": "Edmonton", "population": "932546" },
+           { "name": "Red Deer", "population": "100418" }
        ]
     },{
        "name": "British Columbia",
        "code": "bc", 
+        "id": 3,
        "cities" : [
-           { "name": "Vancouver", "population": "631,486" },
-           { "name": "Surrey", "population": "517,887" },
-           { "name": "Burnaby", "population": "239,700" }
+           { "name": "Vancouver", "population": "631486" },
+           { "name": "Surrey", "population": "517887" },
+           { "name": "Burnaby", "population": "239700" }
        ]
     },{
        "name": "Ontario",
        "code": "on", 
+        "id": 7,
        "cities" : [
-           { "name": "Mississauga", "population": "721,599" },
-           { "name": "Ottawa", "population": "934,243" },
-           { "name": "Toronto", "population": "2,731,579" }
+           { "name": "Mississauga", "population": "721599" },
+           { "name": "Ottawa", "population": "934243" },
+           { "name": "Toronto", "population": "2731579" }
        ]
     },{
        "name": "Quebec",
        "code": "qc", 
+        "id": 8,
        "cities" : [
-           { "name": "Montreal", "population": "1,704,694" },
-           { "name": "Quebec City", "population": "531,902" },
-           { "name": "Laval", "population": "422,993" }
+           { "name": "Montreal", "population": "1704694" },
+           { "name": "Quebec City", "population": "531902" },
+           { "name": "Laval", "population": "422993" }
        ]
     },{
        "name": "Prince Edward Island",
        "code": "pe", 
+        "id": 10,
        "cities" : [
-           { "name": "Charlottetown", "population": "34,562" },
-           { "name": "Summerside", "population": "14,751" },
-           { "name": "Alberton", "population": "1,135" }
+           { "name": "Charlottetown", "population": "34562" },
+           { "name": "Summerside", "population": "14751" },
+           { "name": "Alberton", "population": "1135" }
        ]
     },{
        "name": "Nunavut",
        "code": "nu", 
+        "id": 2,
        "cities" : [
-           { "name": "Iqaluit", "population": "6,254" },
-           { "name": "Rankin", "population": "2,577" },
-           { "name": "Arviat", "population": "1,810" }
+           { "name": "Iqaluit", "population": "6254" },
+           { "name": "Rankin", "population": "2577" },
+           { "name": "Arviat", "population": "1810" }
        ]
     },{
        "name": "Northwest Territories",
+        "id": 1,
        "code": "nt", 
        "cities" : [
-           { "name": "Hay River", "population": "2,806" },
-           { "name": "Inuvik", "population": "3,403" },
-           { "name": "Yellowknife", "population": "18,352" }
+           { "name": "Hay River", "population": "2806" },
+           { "name": "Inuvik", "population": "3403" },
+           { "name": "Yellowknife", "population": "18352" }
        ]
     },{
        "name": "Newfoundland and Labrador",
        "code": "nl", 
+        "id": 12,
        "cities" : [
-           { "name": "Corner Brook", "population": "19,886" },
-           { "name": "Mount Pearl", "population": "24,284" },
-           { "name": "St. John's", "population": "108,860" }
+           { "name": "Corner Brook", "population": "19886" },
+           { "name": "Mount Pearl", "population": "24284" },
+           { "name": "St. John's", "population": "108860" }
        ]
     },{
        "name": "New Brunswick",
        "code": "nb", 
+        "id": 9,
        "cities" : [
-           { "name": "Moncton", "population": "71,889" },
-           { "name": "Saint John", "population": "67,575" },
-           { "name": "Fredericton", "population": "58,220" }
+           { "name": "Moncton", "population": "71889" },
+           { "name": "Saint John", "population": "67575" },
+           { "name": "Fredericton", "population": "58220" }
        ]
     }
 ]

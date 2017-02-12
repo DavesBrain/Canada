@@ -1,1 +1,1 @@
-var CanadaApp = angular.module('CanadaApp', [ "ui.router", "ui.bootstrap", "ui.grid", "ui.grid.selection" ]);
+var CanadaApp = angular.module('CanadaApp', [ "ui.router", "ui.bootstrap", "ui.grid", "ui.grid.selection", "ui.grid.cellNav" ]);
