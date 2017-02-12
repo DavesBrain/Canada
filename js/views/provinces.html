@@ -1,0 +1,9 @@
+<div>
+    <h2>Provinces</h2>
+
+    <input ng-model="controls.filterString"  ng-change="filter()"/>
+    <button type="button" class="btn btn-default" ng-click='clear()'>X</button>
+    <div ui-grid="gridOptions"  ui-grid-selection class="provincesGrid"></div>
+
+    <a ui-sref="province({id: 'on'})">Yukon</a>
+</div>

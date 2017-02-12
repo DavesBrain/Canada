@@ -17,25 +17,14 @@
     <script src="js/routes.js" type="text/javascript"></script>
     <script src="js/services/dataService.js" type="text/javascript"></script>
     <script src="js/controllers/provinceController.js" type="text/javascript"></script>
+    <script src="js/controllers/provincesController.js" type="text/javascript"></script>
 </head>
-<body ng-controller="mainController">                                                                                                                                                                                                                              
+<body ng-controller="provincesController">                                                                                                                                                                                                                              
     <div id="main">
         
-        <h1>Canada</h1> 
+        <h1>Canada</h1>
         
-        <a ui-sref="province">{{ id }}</a>  
-        
-        <div ui-view>
-            <h2>Provinces</h2>
-            
-            <input ng-model="controls.filterString"  ng-change="filter()"/>
-            <button type="button" class="btn btn-default" ng-click='clear()'>X</button>
-            <div ui-grid="gridOptions" class="provincesGrid"></div>
-
-            <a ui-sref="province:({ code: yt })">Yukon</a>
-            
-            <!--        <a ui-sref="provinces({ id: id })">{{ id }}</a>    -->
-        </div>        
+        <div ui-view></div>        
     
     </div>    
     

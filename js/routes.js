@@ -10,18 +10,16 @@
             $stateProvider
                 .state('index', {
                     name: 'index',
-                    url: '#',
-                    templateUrl: 'index.html',
-                    controller: 'mainController',
+                    url: '/',
+                    templateUrl: 'js/views/provinces.html',
+                    controllerAs: 'provincesController',
                     data: { pageTitle: 'Main' }
                 })
                 .state('province', {
                     name:'province',
-                    url: '/province/:code',
+                    url: '/province/:id',
                     templateUrl: 'js/views/province.html',
-                    controller: function($scope, $stateParams) {
-                        $scope.code = $stateParams.code;
-                    },
+                    controllerAs: 'provinceController',
                     data: { pageTitle: 'Province' }
 
                 })

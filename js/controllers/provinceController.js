@@ -3,19 +3,20 @@
 
     angular
         .module('CanadaApp')
-        .controller('provinceController', ['$scope', 'dataService', 'uiGridConstants', function($scope, dataService,  uiGridConstants) {
+        .controller('provinceController', ['$scope', 'dataService', 'uiGridConstants', '$stateParams', function($scope, dataService,  uiGridConstants, $stateParams) {
             
             $scope.controls = {};
-            $scope.params = "yt";
-            $scope.controls = {};
+            $scope.params = "sk";
             
-            
+            console.log("id: ",$stateParams.id);
+                                           
             var init = function (){
-                getCityData($scope.params);
+                console.log("$stateParams.id: ",$stateParams.id);
+                console.log("$scope.params: ", $scope.params);
+                getCityData($stateParams.id);
             };
 
             var getCityData = function (params){
-                console.log(params);
                 return dataService.getCities(params).then(
                     function successCallback(response) {
                         $scope.gridOptions.data = response.data.cities;

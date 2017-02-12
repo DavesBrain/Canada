@@ -1,8 +1,10 @@
 <div ng-controller="provinceController">
     <h2>{{provinceName}}</h2>
+    <a ui-sref="#">Back</a>
 
     <input ng-model="controls.filterString" ng-change="filter()" />
     <button type="button" class="btn btn-default" ng-click='clear()'>X</button>
 
     <div ui-grid="gridOptions" class="citiesGrid"></div>
+    
 </div>
