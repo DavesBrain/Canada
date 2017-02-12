@@ -31,7 +31,7 @@
                 $scope.gridApi = gridApi;
                 $scope.gridApi.grid.registerRowsProcessor( $scope.singleFilter, 200 );
                 gridApi.selection.on.rowSelectionChanged($scope,function(row){
-                    $state.go('province', {id: row.entity.code});
+                    $state.go('cities', {id: row.entity.code});
                 });
             },
             columnDefs: [

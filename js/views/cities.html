@@ -1,4 +1,4 @@
-<div ng-controller="provinceController">
+<div ng-controller="citiesController">
     <div class="row">
         <div class="col-sm-6">
             <h2 class="subhead">{{provinceName}}&nbsp;</h2>
@@ -6,12 +6,12 @@
                 <a class="map-overlay" style="background-position: left -{{provinceId*100+200}}px" title="No this is not clickable!"></a>
             </div>
         </div>
-        <div class="col-sm-2">
-            <div class="align-right"><a class="btn btn-default" ui-sref="index">Back</a></div>
+        <div class="col-sm-2  align-right">
+            <a class="btn btn-default" ui-sref="index">Back</a>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-8 align-right">
             Filter:
             <input ng-model="controls.filterString" ng-change="filter()" />
             <button type="button" class="btn btn-default" ng-click='clear()'>X</button>

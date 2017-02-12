@@ -3,7 +3,7 @@
 
     angular
         .module('CanadaApp')
-        .controller('provinceController', ['$scope', 'dataService', 'uiGridConstants', '$stateParams', function($scope, dataService,  uiGridConstants, $stateParams) {
+        .controller('citiesController', ['$scope', 'dataService', 'uiGridConstants', '$stateParams', function($scope, dataService,  uiGridConstants, $stateParams) {
             
             $scope.controls = {};
             

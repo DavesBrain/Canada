@@ -15,12 +15,12 @@
                     controllerAs: 'provincesController',
                     data: { pageTitle: 'Main' }
                 })
-                .state('province', {
-                    name:'province',
-                    url: '/province/:id',
-                    templateUrl: 'js/views/province.html',
-                    controllerAs: 'provinceController',
-                    data: { pageTitle: 'Province' }
+                .state('cities', {
+                    name:'cities',
+                    url: '/cities/:id',
+                    templateUrl: 'js/views/cities.html',
+                    controllerAs: 'citiesController',
+                    data: { pageTitle: 'Cities' }
 
                 })
             
