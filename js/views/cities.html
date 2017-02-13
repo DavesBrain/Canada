@@ -1,15 +1,15 @@
 <div ng-controller="citiesController">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-2">
             <a class="btn btn-default btn-back" ui-sref="index" title="Back"><i class="fa fa-arrow-left"></i></a>
             <h2 class="subhead">{{provinceName}}&nbsp;</h2>
+        </div>
+        <div class="col-sm-2">
             <div class="map-underlay">
                 <a class="map-overlay" style="background-position: left -{{provinceId*100+200}}px" title="No this is not clickable!"></a>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-4">
             <form class="form-inline pull-right">
                 <input ng-model="controls.filterString" class="form-control" placeholder="Filter" ng-change="filter()" />
                 <button type="button" class="btn btn-default" ng-click='clear()'>X</button>
