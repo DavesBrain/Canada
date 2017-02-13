@@ -1,13 +1,11 @@
 <div ng-controller="citiesController">
     <div class="row">
         <div class="col-sm-6">
+            <a class="btn btn-default btn-back" ui-sref="index" title="Back"><i class="fa fa-arrow-left"></i></a>
             <h2 class="subhead">{{provinceName}}&nbsp;</h2>
             <div class="map-underlay">
                 <a class="map-overlay" style="background-position: left -{{provinceId*100+200}}px" title="No this is not clickable!"></a>
             </div>
-        </div>
-        <div class="col-sm-2 align-right">
-            <a class="btn btn-default" ui-sref="index">Back</a>
         </div>
     </div>
     <div class="row">

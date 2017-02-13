@@ -64,6 +64,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     border-color:#654133;
 }
 
+.btn-back{
+    padding-right: 10px;
+}
+
 /*
 colour palette
 

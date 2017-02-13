@@ -16,7 +16,6 @@ h1 {
     margin: 17px 0;
 }
 
-
 h2 {
     font-size: 12pt;
     color: #654133;
@@ -36,6 +35,10 @@ h2 {
 
 .subhead{
     display: inline;
+}
+
+.spaceholder{
+    visibility: hidden;
 }
 
 .align-right{
