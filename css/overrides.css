@@ -37,8 +37,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .btn.btn-primary,
 .btn.btn-default {
+/*
     padding: 2px 12px;
     margin-bottom: 2px;    
+*/
 }
 
 .btn.btn-default {
