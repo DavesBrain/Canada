@@ -5,8 +5,6 @@
         .module('CanadaApp')
         .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-            $urlRouterProvider.otherwise('/');
-
             $stateProvider
                 .state('index', {
                     name: 'index',
@@ -24,6 +22,7 @@
 
                 })
             
+            $urlRouterProvider.otherwise('/');
             
         }]);
 })();
